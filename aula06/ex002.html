@@ -11,7 +11,7 @@
        body {
         background-color: lightblue;
         color: black;
-        font: normal 25pt Arial;
+        font: normal 25pt Arial; /* Isso é um comentário em CSS */
 
        }
 
@@ -24,14 +24,12 @@
 </head>
 <body>
 
-    <h1>Olá, Mundo!</h1>
+    <h1>Olá, Mundo!</h1> <!-- Isso é um comentário em HTML -->
     <p>Já me livrei da maldição</p>
 
     <script> //Aqui começa o JavaScript
-    //Não é obrigatório o uso de ponto e vírgula ';'
-        window.alert('Minha primeira mensagem') //Aperece janela com mensagem
-        window.confirm('Está gostando de JS?') // Aparece janela com OK e Cancelar
-        window.prompt('Qual seu nome?') //Aparece janela com espaço de escrita
+        var nome = window.prompt('Qual seu nome?') //Aparece janela com espaço de escrita
+        window.alert('É um prazer te conhecer, '+nome+'!') //Concatenação
     </script>
 
 </body>

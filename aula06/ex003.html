@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Programa...</title>
+
+    <style>
+       
+       
+       body {
+        background-color: lightblue;
+        color: black;
+        font: normal 25pt Arial; /* Isso é um comentário em CSS */
+
+       }
+
+       h1 {
+        color: yellow
+       }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Olá, Mundo!</h1> <!-- Isso é um comentário em HTML -->
+    <p>Já me livrei da maldição</p>
+
+    <script> //Aqui começa o JavaScript
+
+        var n1 = Number(window.prompt('Digite um número: ')) //window.prompt retorna string (característica do comand)
+
+        var n2 = Number(window.prompt('Digite outro número: '))
+
+        var s = n1 + n2 
+        //window.alert('A soma dos valores é: ' + String(s))  //Concatenção
+        window.alert(`A soma entre ${n1} e ${n2} é: ${s}`)
+        // (number + number) para adição
+        // (string + string) para concatenação 
+
+        /* JS não faz interpolação. Ex
+
+        var s = 'JavaScript'
+        'Estou aprendendo s' -- A frase vai retornar: 'Estou aprendendo s'
+
+        Template String
+        var s = 'JavaScript'
+        `Estou aprendendo ${s}`
+        
+        */
+        </script>
+
+</body>
+</html>
