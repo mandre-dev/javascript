@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Nacionalidade</title>
+</head>
+<body>
+    
+    <h1>Teste de Nacionalidade BR</h1>
+
+    Em qual país você vive? <input type="text" name="Nacionalidade" id="nactxt">
+    <input type="button" value="Verificar" onclick="resultado()">
+    <div id="resposta"></div>
+
+    <script>
+        function resultado() {
+            var nac = document.getElementById('nactxt');
+            var res = document.querySelector('div#resposta');
+            var pais = nac.value.toLowerCase(); // Converte para minúsculas para comparação
+            var nacionalidade = '';
+
+            if (pais === 'brasil') {
+                nacionalidade = '<strong>Brasileiro.</strong>';
+            } else {
+                nacionalidade = '<strong>Estrangeiro.</strong>';
+            }
+
+            res.innerHTML = `<p>Você mora no <strong>${pais}</strong></p><p>${nacionalidade}</p>`; 
+        }
+    </script>
+
+</body>
+</html>

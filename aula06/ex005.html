@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao DOM</title>
+
+    <style>
+        body {
+            background-color: rgb(68, 125, 199);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <h1>Iniciando estudos com DOM</h1>
+
+    <p>Aqui vai o resultado</p>
+
+    <p>Aprendendo a usar o <strong>DOM</strong> em JS</p>
+
+    <div id="msg">CLIQUE EM MIM!</div>
+
+    <br>
+
+    <script>
+
+        var corpo = window.document.body 
+
+        var p1 = window.document.getElementsByTagName('p')[1] // O [0] é referente ao 1º parágrafo
+
+        var d = window.document.getElementById('msg') //ou
+        var d = window.document.getElementsByTagName('msg')[0]
+        var d = window.document.querySelector('div#msg') //div = (#) class = (.)
+        
+        d.style.background = 'green'
+
+        /* d.style.background = 'green'
+        d.innerText = 'Esou aguardando...' */
+
+        /*corpo.style.background = 'black'
+        p1.style.color = 'red' */
+
+        window.document.write('Está escrito assim: ' + p1.innerHTML) //o InnerText não vem a com formatação comparado com o InnerHtml
+        
+        //window.alert(p1.innerText)
+
+        //window.document.write('Olá, Mundo!')  //Maneira +simples de add componentes
+        //window.document.write(window.document.charset)
+        //window.document.write(window.navigator.appName) 
+        //window.document.write(window.document.URL)
+    </script>
+
+</body>
+</html>
